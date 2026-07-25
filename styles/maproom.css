@@ -161,6 +161,21 @@ font-family: "Verdana";
     border-bottom: 2px solid #a58345; 
 }
 
+.maincontent h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-style: bold;
+    color: #c5a05c;
+    padding: 10px 20px 10px 20px;
+}
+
+.maincontent p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11pt;
+    color: #c5a05c;
+    padding: 10px 20px 10px 20px;
+}
+
 
 /* End Main */
 
