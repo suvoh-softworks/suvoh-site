@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvoh_Homeworks</title>
+    <link href="styles/home.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/resources/images/testicon.ico" type="image/x-icon">
+    <script>
+        function suvohGetDate() {
+                    //var ficDateObj = document.getElementById("ficdate");
+                    //var FooterYearObj = document.getElementById("footeryear")
+                    console.log("Function Executed.");
+                    const dateGetter = new Date();
+                    const dateYear = dateGetter.getFullYear();
+                    const ficDate = dateGetter.getDate().toLocaleString('en-US');
+                    document.getElementById("ficdate").textContent = "The date is: " + ficDate.getDay() + " " + ficDate.getMonth() + ", " + ficDate.getYear();
+                }
+        </script>
+    <!--End of Head-->
+</head>
+
+    <!-- Body, Nav, Intro, and main content -->
+    <body onload="suvohGetDate()">
+        
+        <!-- Header/Banner, has logo and page title -->
+        <header id="homehead">
+            <img id="homeheadimg" src="resources/images/eagle.png" alt="Adler">
+            <h1>Suvoh Homeworks</h1>
+        </header>
+        <!-- Message of the Day Conveyor/Marquee/Banner or whatever-->
+        <div class="conveyor">
+            <div class="scroller">
+                <p id="ficdate"></p>
+                <p>Weather in East Prussia is: Heavy Smog, 40% chance of acid rain</p> 
+                <p>Konigsberg Airport Status: At Full Capacity</p>
+                <p>Last Known Location of the King of Weiss: -62.956618, -60.581914</p>
+                <p>All is clear on the eastern front, according to near-orbital reports. Resume patrols as normal.</p>
+            </div>
+        </div>
+        <!--  -->
+        <main>
+            <div class="gridman">
+                <!-- Reactive Nav Menu, may expand in future -->
+                <div id="homenav">
+                   <!-- <input class="navbutton" value="About"></input>
+                    <input class="navbutton" value="Map"></input>
+                    <input class="navbutton" value="Stories"></input>
+                    <input class="navbutton" value="More"></input> -->
+                    <a class="navbutton" href="maproom.html">About</a>
+                    <a class="navbutton" href="maproom.html">Map</a>
+                    <a class="navbutton" href="maproom.html">Stories</a>
+                    <a class="navbutton" href="maproom.html">More</a>
+                </div>
+                <!-- Blerb, to randomize with database -->
+                <div id="homeblerb">
+                    <p>
+                        "Suvoh, oh creature of habit and kinless werks. 
+                        <br>May thene words be felt as iron, 
+                        <br>and thene actions burn ento the souls of all who witness."
+                    </p>
+                    <p id="blerbquote">
+                        - Carutai, Three King
+                    </p>
+                    <img src="resources/images/Three-Eye.png">
+                </div>
+            </div>
+            <!-- Main content section for homepage -->
+            <div class="maincontent">
+                <p>
+                    A repository of all things pertaining to the Suvoh kingdom of projects and proliferations. 
+                </p>
+                <p>
+                    Have faith that things will work out in the end. Do not quit the race halfway because your face has been bruised.
+                </p>
+
+            </div>
+        </main>
+        <!--End of Main-->
+        
+        <footer id="homefooter">
+            <p id="footeryear">
+                Site by Suvoh Softworks
+            </p>
+        <!--End of Footer-->
+        </footer>
+        <!--End of Body-->
+    </body>
+</html>

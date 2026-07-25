@@ -1,0 +1,195 @@
+/* Homepage CSS, may use elsewhere */
+
+@font-face {
+    font-family: 'Calligraphy';
+    src: url(../resources/fonts/CalligraphyFLF.ttf)
+}
+/* Germanic, old European font */
+@font-face {
+    font-family: 'Proclamate';
+    src: url(../resources/fonts/proclamate\ light.ttf)
+}
+
+@font-face { 
+    font-family: 'Paladin';
+    src: url(../resources/fonts/PaladinFLF.ttf)
+}
+
+/* Start HTML */
+html {
+    /*background-color: #181818;*/
+    background-image: url(../resources/images/darkbrainback.png);
+    background-attachment: fixed;
+}
+
+/* Start Body Section */
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+/* Start Header */
+header {
+    height: 120px;
+}
+
+#head {
+    display: flex;
+    max-width: 1000px;;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-image: url(../resources/images/backcloude.jpg);
+    
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url(../resources/images/15x15homeborder.png) 15 round;
+}
+
+#head img {
+    min-height: 120px;
+    max-height: 120px;
+}
+
+#head h1 {
+    font-family: 'Proclamate';
+    color: #181818;
+    font-weight: bold;
+    font-size: 40pt;
+    text-shadow: 2px 2px #c5a05c;
+
+    padding-left: 10px;
+}
+
+/*End Header*/
+
+/* Home Scrolling Marquee, may be used elsewhere */
+.conveyor {
+    width: 100%;
+    overflow: hidden;
+
+    background-color: transparent;
+    border-top: 2px solid #c5a05c;
+    border-bottom: 2px solid #c5a05c;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    margin-top: 10px;
+}
+.conveyor .scroller {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 1rem;
+    width:fit-content;
+    white-space: nowrap;
+    animation: loop 25s linear infinite;
+
+    padding-left: 100%;
+}
+
+@keyframes loop {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+
+.scroller p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11pt;
+    font-style: italic;
+    color: #c5a05c;
+    padding-right: 60px;
+}
+
+/* End Marquee */
+/*Start Main */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    
+}
+
+.gridman {
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 30% 69%;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+
+    
+    /*border: 1px solid #c5a05c;*/
+}
+
+
+.gridman p {
+color: #c5a05c;
+font-family: "Verdana";
+}
+
+#nav {
+    grid-column-start: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#nav .navbutton {
+    width: 75%;
+    display: inline-block;
+    background-image:url(../resources/images/backbutton.jpg);
+    border: 9px solid transparent;
+    padding: 9px;
+    border-image: url(../resources/images/9x9buttonborder.png) 9 round;
+    
+    color: #181818;
+    text-shadow: 2px 2px #c5a05c;
+    
+    font-family: "Paladin";
+    font-size: 20pt;
+    text-decoration:none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.maincontent {
+    display:grid;
+    height: 700px;
+    margin-top: 10px;
+    background-image: url(../resources/images/bodydarker.png);
+    border-top: 2px solid #c5a05c;
+    border-left: 2px solid #c5a05c;
+    border-right: 2px solid #a58345;
+    border-bottom: 2px solid #a58345; 
+}
+
+
+/* End Main */
+
+/* Start Footer */
+#footer {
+    display: grid;
+    height: 75px;
+    margin-top: 10px;
+    background-image: url(../resources/images/bodydarker.png);
+    border-top: 2px solid #c5a05c;
+    border-left: 2px solid #c5a05c;
+    border-right: 2px solid #a58345;
+    border-bottom: 2px solid #a58345; 
+}
+
+#footer p {
+    color: #a58345;
+}
+/* End Footer */
+
+/* End Body */
+/* End HTML */
+
+/* Viewport CSS */

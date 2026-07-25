@@ -1,0 +1,17 @@
+/* CSS Page for all fonting, mostly for pasting to other sheets */
+
+/* Gaelic, old European font */
+@font-face { 
+    font-family: 'Paladin';
+    src: url(../resources/fonts/PaladinFLF.ttf)
+}
+/* Fancy but readable, Victorian font */
+@font-face {
+    font-family: 'Calligraphy';
+    src: url(../resources/fonts/Calligraphy.ttf)
+}
+/* Germanic, old European font */
+@font-face {
+    font-family: 'Proclamate';
+    src: url(../resources/fonts/Proclamate.ttf)
+}
